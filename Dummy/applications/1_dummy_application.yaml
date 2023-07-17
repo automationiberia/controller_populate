@@ -1,0 +1,11 @@
+---
+controller_applications:
+  - name: "dummy_application"
+    description: ""
+    organization: "Dummy"
+    authorization_grant_type: "password"
+    redirect_uris: ""
+    skip_authorization: "False"
+    client_id: "r7vAOxBqrQeGgekfhR51UK8VGhuoTJqGafgG2D0e"
+    client_type: "confidential"
+...

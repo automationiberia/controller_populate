@@ -1,0 +1,6 @@
+---
+controller_inventories:
+  - name: "Inventory_Dummy_2"
+    description: ""
+    organization: "Dummy"
+...

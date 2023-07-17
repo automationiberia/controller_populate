@@ -1,0 +1,21 @@
+---
+controller_schedules:
+  - name: "Cleanup Expired OAuth 2 Tokens"
+    description: "Removes expired OAuth 2 access and refresh tokens"
+    organization: "ToDo: The schedule 'Cleanup Expired OAuth 2 Tokens' must have an organization"
+    enabled: True
+    unified_job_template: "Cleanup Expired OAuth 2 Tokens"
+    dtstart: "2023-07-17T09:13:26Z"
+    dtend: "2023-07-17T09:13:26Z"
+    timezone: "UTC"
+    rrule: "DTSTART:20230717T091326Z RRULE:FREQ=WEEKLY;INTERVAL=1;COUNT=1"
+    extra_data:
+      {}
+    scm_branch: ""
+    job_type: ""
+    job_tags: ""
+    skip_tags: ""
+    limit: ""
+    diff_mode: 
+    verbosity: 0
+...

@@ -1,0 +1,21 @@
+---
+controller_schedules:
+  - name: "Cleanup Job Schedule"
+    description: "Automatically Generated Schedule"
+    organization: "ToDo: The schedule 'Cleanup Job Schedule' must have an organization"
+    enabled: True
+    unified_job_template: "Cleanup Job Details"
+    dtstart: "2023-07-23T09:11:44Z"
+    dtend: ""
+    timezone: "UTC"
+    rrule: "DTSTART:20230717T091144Z RRULE:FREQ=WEEKLY;INTERVAL=1;BYDAY=SU"
+    extra_data:
+      days: '120'
+    scm_branch: ""
+    job_type: ""
+    job_tags: ""
+    skip_tags: ""
+    limit: ""
+    diff_mode: 
+    verbosity: 0
+...

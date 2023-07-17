@@ -1,0 +1,6 @@
+---
+controller_teams:
+  - name: "dummy"
+    description: ""
+    organization: "Dummy"
+...

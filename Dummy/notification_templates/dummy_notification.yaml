@@ -1,0 +1,77 @@
+---
+controller_notifications:
+  - name: "dummy_notification"
+    organization: "Dummy"
+    notification_type: "email"
+    notification_configuration:
+      approved_body: 'The approval node "{{ approval_node_name }}" was approved. {{ workflow_url
+        }}
+
+
+        {{ job_metadata }}'
+      denied_body: 'The approval node "{{ approval_node_name }}" was denied. {{ workflow_url
+        }}
+
+
+        {{ job_metadata }}'
+      error_body: '{{ job_friendly_name }} #{{ job.id }} had status {{ job.status }}, view
+        details at {{ url }}
+
+
+        {{ job_metadata }}'
+      host: email.dummy.com
+      password: ''
+      port: 25
+      recipients:
+      - receiver@dummy.com
+      running_body: 'The approval node "{{ approval_node_name }}" needs review. This approval
+        node can be viewed at: {{ workflow_url }}
+
+
+        {{ job_metadata }}'
+      sender: sender@dummy.com
+      started_body: '{{ job_friendly_name }} #{{ job.id }} had status {{ job.status }},
+        view details at {{ url }}
+
+
+        {{ job_metadata }}'
+      success_body: '{{ job_friendly_name }} #{{ job.id }} had status {{ job.status }},
+        view details at {{ url }}
+
+
+        {{ job_metadata }}'
+      timed_out_body: 'The approval node "{{ approval_node_name }}" has timed out. {{ workflow_url
+        }}
+
+
+        {{ job_metadata }}'
+      timeout: 30
+      use_ssl: false
+      use_tls: false
+      username: ''
+
+    messages:
+      error:
+        body: null
+        message: null
+      started:
+        body: null
+        message: null
+      success:
+        body: null
+        message: null
+      workflow_approval:
+        approved:
+          body: null
+          message: null
+        denied:
+          body: null
+          message: null
+        running:
+          body: null
+          message: null
+        timed_out:
+          body: null
+          message: null
+
+...
