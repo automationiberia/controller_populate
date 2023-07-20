@@ -2,12 +2,12 @@
 controller_schedules:
   - name: "dummy"
     description: ""
-    organization: "ToDo: The schedule 'dummy' must have an organization"
+    organization: "Dummy"
     enabled: True
     unified_job_template: "Job_Template_Dummy_1"
     inventory: "Inventory_Dummy_1"
-    dtstart: "2023-07-17T22:00:00Z"
-    dtend: "2023-07-17T23:30:00Z"
+    dtstart: "2023-07-09T22:00:00Z"
+    dtend: "2023-07-09T23:30:00Z"
     timezone: "Europe/Berlin"
     rrule: "DTSTART;TZID=Europe/Berlin:20230718T000000 RRULE:FREQ=MINUTELY;INTERVAL=10;COUNT=10"
     extra_data:
@@ -17,6 +17,5 @@ controller_schedules:
     job_tags: ""
     skip_tags: ""
     limit: ""
-    diff_mode: 
     verbosity: 0
 ...

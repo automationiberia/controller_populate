@@ -1,0 +1,47 @@
+---
+controller_notifications:
+  - name: "dummy_notification"
+    organization: "Dummy"
+    notification_type: "email"
+    notification_configuration:
+      username: ""
+      password: ""
+      host: "email.dummy.com"
+      recipients: ['receiver@dummy.com']
+      sender: "sender@dummy.com"
+      port: 25
+      timeout: 30
+      started_body: !unsafe "{{ job_friendly_name }} #{{ job.id }} had status {{ job.status }}, view details at {{ url }}\n\n{{ job_metadata }}"
+      success_body: !unsafe "{{ job_friendly_name }} #{{ job.id }} had status {{ job.status }}, view details at {{ url }}\n\n{{ job_metadata }}"
+      error_body: !unsafe "{{ job_friendly_name }} #{{ job.id }} had status {{ job.status }}, view details at {{ url }}\n\n{{ job_metadata }}"
+      approved_body: !unsafe "The approval node \"{{ approval_node_name }}\" was approved. {{ workflow_url }}\n\n{{ job_metadata }}"
+      denied_body: !unsafe "The approval node \"{{ approval_node_name }}\" was denied. {{ workflow_url }}\n\n{{ job_metadata }}"
+      running_body: !unsafe "The approval node \"{{ approval_node_name }}\" needs review. This approval node can be viewed at: {{ workflow_url }}\n\n{{ job_metadata }}"
+      timed_out_body: !unsafe "The approval node \"{{ approval_node_name }}\" has timed out. {{ workflow_url }}\n\n{{ job_metadata }}"
+      use_ssl: False
+      use_tls: False
+    messages:
+      error:
+        body: null
+        message: null
+      started:
+        body: null
+        message: null
+      success:
+        body: null
+        message: null
+      workflow_approval:
+        approved:
+          body: null
+          message: null
+        denied:
+          body: null
+          message: null
+        running:
+          body: null
+          message: null
+        timed_out:
+          body: null
+          message: null
+
+...

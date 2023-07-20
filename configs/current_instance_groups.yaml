@@ -4,7 +4,7 @@ controller_instance_groups:
     policy_instance_minimum: "0"
     policy_instance_percentage: "0"
     instances:
-      - "localhost"
+      - "aap1.bcnconsulting.com"
   - name: "dummy_instance"
     policy_instance_minimum: "0"
     policy_instance_percentage: "0"

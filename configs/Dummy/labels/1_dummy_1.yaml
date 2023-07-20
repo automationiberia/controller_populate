@@ -1,5 +1,5 @@
 ---
 controller_labels:
   - name: "dummy_1"
-    organization: "Default"
+    organization: "Dummy"
 ...

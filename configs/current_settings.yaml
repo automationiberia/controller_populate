@@ -1,0 +1,21 @@
+---
+controller_settings:
+  - settings:
+      TOWER_URL_BASE: "https://tower.bcnconsulting.com"
+      LICENSE:
+        company_name: ''
+        instance_count: 16
+        license_date: 1694836799
+        license_key: b094649ed6697f9fbb5319df064c9b50a8cf97b912dc7956781fd91111446bb4
+        license_type: enterprise
+        subscription_name: Red Hat Developer Subscription for Individuals
+      REDHAT_USERNAME: "iaragone@redhat.com"
+      REDHAT_PASSWORD: "$encrypted$"
+      INSTALL_UUID: "b53d1ffb-6693-4919-b025-3e87ce1d2579"
+      INSIGHTS_TRACKING_STATE: "true"
+      AUTOMATION_ANALYTICS_LAST_GATHER: "2023-07-19T05:26:34.899664Z"
+      PENDO_TRACKING_STATE: "detailed"
+      AUTH_LDAP_GROUP_TYPE_PARAMS:
+        member_attr: member
+        name_attr: cn
+...

@@ -1,8 +1,8 @@
 ---
 controller_groups:
-  - name: "dummy"
+  - name: "dummy_group"
     description: ""
-    inventory: "Inventory_Dummy_2"
+    inventory: "Inventory_Dummy_3"
     hosts:
       - dummy
 ...
