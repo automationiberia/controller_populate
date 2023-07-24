@@ -2,7 +2,7 @@
 controller_projects:
   - name: "Project_Dummy_3"
     description: ""
-    organization: "Default"
+    organization: "Dummy"
     scm_type: "git"
     scm_url: "https://github.com/automationiberia/dummy-playbooks.git"
     scm_branch: ""
