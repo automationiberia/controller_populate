@@ -21,5 +21,5 @@
    ```
 6. Run the playbook:
    ```
-   ansible-playbook -i localhost, config-controller-filetree.yml -e "{dir_orgs_vars: $PWD/configs, orgs: Dummy, controller_configuration_credentials_secure_logging: false}" -e @/tmp/vault.yaml -e @paths.yaml
+   time ansible-playbook -i localhost, config-controller-filetree.yml -e "{dir_orgs_vars: $PWD/configs, orgs: Dummy, controller_configuration_credentials_secure_logging: false}" -e @/tmp/vault.yaml -e @paths.yaml
    ```
