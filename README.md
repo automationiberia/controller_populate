@@ -1,3 +1,5 @@
+# High Level steps
+
 1. Update the Instance names in the instance groups:
    ```
    vim configs/current_instance_groups.yaml
