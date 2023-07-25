@@ -1,6 +1,9 @@
 ---
 controller_roles:
   - team: "dummy"
+    credential: "dummy"
+    role: "admin"
+  - team: "dummy"
     organizations:
       - "Default"
     role: "execute"
